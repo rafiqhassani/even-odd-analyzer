@@ -4,6 +4,9 @@ const evenResult = document.getElementById("evenResult");
 const oddResult = document.getElementById("oddResult");
 document.addEventListener("DOMContentLoaded", function () {
   btn.addEventListener("click", function () {
+    evenResult.textContent = "";
+    oddResult.textContent = "";
+
     const numbers = numberInput.value
       .split(",")
       .map((num) => Number(num.trim()));
